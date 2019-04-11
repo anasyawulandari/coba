@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halaman Utama</title>
+	 <link rel="stylesheet" href="halaman.css">
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+ 
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+		<td><img src="PILAPILEMLOGO.png" alt= "logo" width="6%"height="6%"/></td>
+		
+	<menu>
+			<ul>
+				<li><a class="home"href="">HOME</a></li>
+				<li><a class="signin"onclick="signin()">MASUK</a></li>
+				<li><a class="daftarakun"onclick="daftar()">DAFTAR AKUN</a></li>
+				<li><a class="people" href="">MANUSIA FILMS</a></li>
+				<li><a class="film" href="">FILM</a></li>
+				<li><a class="lists"href="">LISTS</a></li>
+			
+			</ul>
+	</menu>
+	
+		<!--SIGN IN-->
+
+		<div class="form-popup" id="id01">
+		  
+		  <form class="form-container" >
+		    <div class="form">
+		      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close form-popup">&times;</span>
+		    </div>
+
+		    <div class="container">
+		      <label for="uname"><b>Username</b></label>
+		      <input type="text" placeholder="Enter Username" name="uname" required>
+
+		      <label for="psw"><b>Password</b></label>
+		      <input type="password" placeholder="Enter Password" name="psw" required>
+		        
+		      <button type="submit">Sign in</button><br>
+		      <label>
+		        <input type="checkbox" checked="checked" name="remember"> Remember me
+		      </label>
+		    </div>
+
+		    <div class="container" style="background-color:#0000">
+		      
+		      <span class="psw">Forgot <a href="#">password?</a></span>
+		    </div>
+		  </form>
+		</div>
+
+
+
+		<!--SIGN UP-->
+		
+	
+		
+<!-- The Modal (contains the Sign Up form) -->
+			<div class="daftar" id="id02" >
+		  		<form class="daftar-content">
+		  		<div class="daftarakun">
+		  			<span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close daftar">&times;</span>
+		  		</div>
+		   		 <div class="container1">
+		      		<h1>DAFTAR AKUN</h1>
+		      		<p>Please fill in this form to create an account.</p>
+		      		<hr>
+				      <label for="email"><b>Email</b></label>
+				      <input type="text" placeholder="Enter Email" name="email" required>
+				       <label for="uname"><b>Username</b></label>
+		     		   <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+
+				      <label for="psw-repeat"><b>Confirm Password</b></label>
+				      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> I'm at least 17 years old and accept the Term of Use.
+		     		  </label>
+
+
+		      		<div class="clearfix">
+		        		
+		       			 <button type="submit" class="signup">DAFTAR</button>
+		      		</div>
+		    		</div>
+		 	 	</form>
+			</div>
+
+
+		<script >
+			var text ;
+			function signin(){
+				document.getElementById("id01").style.display = "block";
+			}
+			var text;
+			function daftar(){
+				document.getElementById("id02").style.display = "block";
+			}
+			
+		</script>
+
+
+
+</body>
+</html>
